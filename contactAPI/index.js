@@ -47,21 +47,23 @@ module.exports = function(app, db2) {
 	];
 
 	const BASE_API_URL = '/api/v1';
-	
-	function checkJSON (data){
-		return (data.country != null) && 
-			(data.year != null) &&
-			(data.eev != null) &&
-			(data.ms != null) &&
-			(data.eec != null) ;
+
+	function checkJSON(data) {
+		return (
+			data.country != null &&
+			data.year != null &&
+			data.eev != null &&
+			data.ms != null &&
+			data.eec != null
+		);
 	}
 
 	app.post(BASE_API_URL + '/ec-stats', (req, res) => {
 		console.log(req.body);
-		if(checkJSON(req.body)){
+		if (checkJSON(req.body)) {
 			db2.insert(req.body);
 			res.sendStatus(201, 'CREATED');
-		} else{
+		} else {
 			res.sendStatus(400, 'BAD REQUEST');
 		}
 	});
@@ -79,7 +81,7 @@ module.exports = function(app, db2) {
 			row.forEach(r => {
 				delete r._id;
 			});
-			
+
 			var frows = row;
 
 			if (rcountry != undefined) {
@@ -87,51 +89,50 @@ module.exports = function(app, db2) {
 					return r.country == rcountry;
 				});
 			}
-			
+
 			if (ryear != undefined) {
 				frows = frows.filter(r => {
 					return r.year == ryear;
 				});
 			}
-			
+
 			if (reev != undefined) {
 				frows = frows.filter(r => {
 					return r.eev == reev;
 				});
 			}
-			
+
 			if (rms != undefined) {
 				frows = frows.filter(r => {
 					return r.ms == rms;
 				});
 			}
-			
+
 			if (reec != undefined) {
 				frows = frows.filter(r => {
 					return r.eec == reec;
 				});
 			}
-			
+
 			if (roffset != undefined) {
 				var newFrows = [];
-				
-				for(i = roffset; i < frows.length; i++){
+
+				for (i = roffset; i < frows.length; i++) {
 					newFrows.push(frows[i]);
 				}
-				
+
 				frows = newFrows;
 			}
-			
+
 			if (rlimit != undefined) {
 				var newFrows = [];
-				
-				for(i = 0; i < rlimit; i++){
+
+				for (i = 0; i < rlimit; i++) {
 					newFrows.push(frows[i]);
 				}
-				
+
 				frows = newFrows;
 			}
-			
 
 			res.send(JSON.stringify(frows, null, 2));
 			console.log('Data is' + JSON.stringify(frows, null, 2));
@@ -159,23 +160,27 @@ module.exports = function(app, db2) {
 	});
 
 	app.put(BASE_API_URL + '/ec-stats/:country/:year', (req, res) => {
-		var country = req.params.country;
-		var year = req.params.year;
+		if (checkJSON(req.body)) {
+			var country = req.params.country;
+			var year = req.params.year;
 
-		db2.find({}, (err, rows) => {
-			var frows = rows.filter(r => {
-				return r.country == country && r.year == year;
+			db2.find({}, (err, rows) => {
+				var frows = rows.filter(r => {
+					return r.country == country && r.year == year;
+				});
+
+				if (frows.length >= 1) {
+					var idr = frows[0]._id;
+					db2.remove({ _id: idr }, {}, function(err, numRemoved) {});
+					db2.insert(req.body);
+					res.sendStatus(200, 'UPDATED');
+				} else {
+					res.sendStatus(404, 'ROW NOT FOUND');
+				}
 			});
-
-			if (frows.length >= 1) {
-				var idr = frows[0]._id;
-				db2.remove({ _id: idr }, {}, function(err, numRemoved) {});
-				db2.insert(req.body);
-				res.sendStatus(200, 'UPDATED');
-			} else {
-				res.sendStatus(404, 'ROW NOT FOUND');
-			}
-		});
+		} else {
+			res.sendStatus(400, 'BAD REQUEST');
+		}
 	});
 
 	app.get(BASE_API_URL + '/ec-stats/loadInitialData', (req, res) => {

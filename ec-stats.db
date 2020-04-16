@@ -1,34 +1,36 @@
-{"country":"canada","year":2015,"eev":3456,"ms":0.34,"eec":14563,"_id":"AcJIkf5PyYmW3BIh"}
-{"country":"china","year":"2014","eev":"81298","ms":"0.23","eec":"28619","_id":"K2jPxpOw3Vb3cL3R"}
-{"country":"united states","year":2014,"eev":291332,"ms":0.72,"eec":172000,"_id":"Oe8kfie0Ya3nZvvf"}
-{"countri":"china","year":"2014","eev":"81298","ms":"1.00","eec":"28619","_id":"SNDiqGmJISr4zXIy"}
-{"country":"france","year":2014,"eev":43605,"ms":1.2,"eec":489944,"_id":"aBKL41yRGn5x82k8"}
-{"country":"united kingdom","year":2014,"eev":24500,"ms":1.1,"eec":135002,"_id":"fdP9AjvEINeKuJRW"}
-{"countri":"china","year":"2014","eev":"81298","ms":"1.00","eec":"28619","_id":"pt5PEl7y0vZaAiNq"}
-{"country":"china","year":"2014","eev":"81298","ms":"1.00","eec":"28619","_id":"qKFv44wvn8PYfOM2"}
-{"country":"sweden","year":2014,"eev":8076,"ms":1.53,"eec":135002,"_id":"qzJBbPfk5zZ3Usf6"}
-{"country":"china","year":"2014","eev":"81298","ms":"1.00","eec":"28619","_id":"tO7Fk8ZA3XHkVJLz"}
-{"countri":"china","year":"2014","eev":"81298","ms":"1.00","eec":"28619","_id":"vdylmkxL0mI4LTVa"}
-{"country":"china","year":"2014","eev":"81298","ms":"1.00","eec":"28619","_id":"AznspmJfoWufksSl"}
-{"$$deleted":true,"_id":"AcJIkf5PyYmW3BIh"}
-{"$$deleted":true,"_id":"AznspmJfoWufksSl"}
-{"$$deleted":true,"_id":"K2jPxpOw3Vb3cL3R"}
-{"$$deleted":true,"_id":"Oe8kfie0Ya3nZvvf"}
-{"$$deleted":true,"_id":"SNDiqGmJISr4zXIy"}
-{"$$deleted":true,"_id":"aBKL41yRGn5x82k8"}
-{"$$deleted":true,"_id":"fdP9AjvEINeKuJRW"}
-{"$$deleted":true,"_id":"pt5PEl7y0vZaAiNq"}
-{"$$deleted":true,"_id":"qKFv44wvn8PYfOM2"}
-{"$$deleted":true,"_id":"qzJBbPfk5zZ3Usf6"}
-{"$$deleted":true,"_id":"tO7Fk8ZA3XHkVJLz"}
-{"$$deleted":true,"_id":"vdylmkxL0mI4LTVa"}
 {"country":"sweden","year":2014,"eev":8076,"ms":1.53,"eec":135002,"_id":"8Uj2yEnHp9AAxL1V"}
+{"country":"canada","year":2015,"eev":3456,"ms":0.34,"eec":14563,"_id":"Kdgkc3MWO1h1ZCFT"}
+{"country":"united states","year":2014,"eev":291332,"ms":0.72,"eec":172000,"_id":"OF85nLA5eq98G3if"}
 {"country":"france","year":2014,"eev":43605,"ms":1.2,"eec":489944,"_id":"TKbeqnLEMZ3OFEQp"}
 {"country":"united kingdom","year":2014,"eev":24500,"ms":1.1,"eec":135002,"_id":"jRscYmqIuq9iFuW5"}
-{"country":"united states","year":2014,"eev":291332,"ms":0.72,"eec":172000,"_id":"OF85nLA5eq98G3if"}
-{"country":"china","year":2014,"eev":81298,"ms":0.23,"eec":28619,"_id":"C7GdsGdXvllq1bJz"}
-{"country":"canada","year":2015,"eev":3456,"ms":0.34,"eec":14563,"_id":"Kdgkc3MWO1h1ZCFT"}
-{"$$deleted":true,"_id":"C7GdsGdXvllq1bJz"}
-{"country":"china","year":"2014","eev":"81298","ms":"1.00","eec":"28619","_id":"JNw1hbgRo63EQyug"}
-{"$$deleted":true,"_id":"JNw1hbgRo63EQyug"}
 {"country":"china","year":"2014","eev":"81298","ms":"0.23","eec":"28619","_id":"tnk97R01zzeBhoJi"}
+{"$$deleted":true,"_id":"8Uj2yEnHp9AAxL1V"}
+{"$$deleted":true,"_id":"Kdgkc3MWO1h1ZCFT"}
+{"$$deleted":true,"_id":"OF85nLA5eq98G3if"}
+{"$$deleted":true,"_id":"TKbeqnLEMZ3OFEQp"}
+{"$$deleted":true,"_id":"jRscYmqIuq9iFuW5"}
+{"$$deleted":true,"_id":"tnk97R01zzeBhoJi"}
+{"country":"sweden","year":2014,"eev":8076,"ms":1.53,"eec":135002,"_id":"Zn0hZlyWZsfb2XGe"}
+{"country":"france","year":2014,"eev":43605,"ms":1.2,"eec":489944,"_id":"QHgsVwn7gTCqxCKG"}
+{"country":"united kingdom","year":2014,"eev":24500,"ms":1.1,"eec":135002,"_id":"BtcmvjIB2A1qq0ug"}
+{"country":"united states","year":2014,"eev":291332,"ms":0.72,"eec":172000,"_id":"WAfTbcyhkZ6mu7Iy"}
+{"country":"china","year":2014,"eev":81298,"ms":0.23,"eec":28619,"_id":"t9ZcZkb7g36Ag5Wi"}
+{"country":"canada","year":2015,"eev":3456,"ms":0.34,"eec":14563,"_id":"PTxqVrg8Cg3QNxCa"}
+{"$$deleted":true,"_id":"t9ZcZkb7g36Ag5Wi"}
+{"country":"china","year":"2014","eev":"81298","ms":"0.23","eec":"28619","_id":"OYOXOtVEpjhlFPXo"}
+{"$$deleted":true,"_id":"BtcmvjIB2A1qq0ug"}
+{"$$deleted":true,"_id":"OYOXOtVEpjhlFPXo"}
+{"$$deleted":true,"_id":"PTxqVrg8Cg3QNxCa"}
+{"$$deleted":true,"_id":"QHgsVwn7gTCqxCKG"}
+{"$$deleted":true,"_id":"WAfTbcyhkZ6mu7Iy"}
+{"$$deleted":true,"_id":"Zn0hZlyWZsfb2XGe"}
+{"country":"sweden","year":2014,"eev":8076,"ms":1.53,"eec":135002,"_id":"9M2LBFCjv7TkN8Ff"}
+{"country":"france","year":2014,"eev":43605,"ms":1.2,"eec":489944,"_id":"pdSOommi4ui50LGx"}
+{"country":"united kingdom","year":2014,"eev":24500,"ms":1.1,"eec":135002,"_id":"jqiH8kngTuR3XD2L"}
+{"country":"united states","year":2014,"eev":291332,"ms":0.72,"eec":172000,"_id":"imRQB6YTmMM9XUST"}
+{"country":"china","year":2014,"eev":81298,"ms":0.23,"eec":28619,"_id":"DFg0GKoBcodbJjHT"}
+{"country":"canada","year":2015,"eev":3456,"ms":0.34,"eec":14563,"_id":"w1ktmagt2ILYCOzC"}
+{"$$deleted":true,"_id":"DFg0GKoBcodbJjHT"}
+{"country":"china","year":"2014","eev":"81298","ms":"1.00","eec":"28619","_id":"koYdNA6KuRlJqT1z"}
+{"$$deleted":true,"_id":"koYdNA6KuRlJqT1z"}
+{"country":"china","year":"2014","eev":"81298","ms":"0.23","eec":"28619","_id":"oaTEupAwD7HcPCpJ"}
