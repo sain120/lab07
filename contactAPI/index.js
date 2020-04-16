@@ -47,10 +47,23 @@ module.exports = function(app, db2) {
 	];
 
 	const BASE_API_URL = '/api/v1';
+	
+	function checkJSON (data){
+		return (data.country != null) && 
+			(data.year != null) &&
+			(data.eev != null) &&
+			(data.ms != null) &&
+			(data.eec != null) ;
+	}
 
 	app.post(BASE_API_URL + '/ec-stats', (req, res) => {
-		db2.insert(req.body);
-		res.sendStatus(201, 'CREATED');
+		console.log(req.body);
+		if(checkJSON(req.body)){
+			db2.insert(req.body);
+			res.sendStatus(201, 'CREATED');
+		} else{
+			res.sendStatus(400, 'BAD REQUEST');
+		}
 	});
 
 	app.get(BASE_API_URL + '/ec-stats', (req, res) => {
